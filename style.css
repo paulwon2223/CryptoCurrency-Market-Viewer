@@ -2,10 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: black;
+    color: antiquewhite;
 }
 
 body {
-    padding: 20px 100px;
+
+    background-color: black;
+    color: antiquewhite;
 }
 
 .container {
@@ -14,14 +18,16 @@ body {
 
 #topcontainer {
     padding-top: 5px;
+    
 }
 
 #topcontainer .current-time-container {
     padding-bottom: 5px;
+    font-family:Impact, sans-serif
 }
 
 #topcontainer .current-time-container .current-time{
-    font-family: 'Montserrat', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 50px;
 }
 
@@ -32,10 +38,22 @@ input[type="text"] {
     text-align: center;
 }
 
-#mainimg {
-    background: url(./img/main.png);
+#crypto-coin-png-14 {
+    background: url(./img/crypto-coin-png-14.png);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    height: 77vh;
+    width:100%;
 }
+.full-width{
+    max-width:100%;
+    margin: 0 auto;
+    position: relative;
+   
+  }
+  .full-width-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
