@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px 100px;
+}
+
+.container {
+    align-items: center;
+}
+
+#topcontainer {
+    padding-top: 5px;
+}
+
+#topcontainer .current-time-container {
+    padding-bottom: 5px;
+}
+
+#topcontainer .current-time-container .current-time{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+}
+
+input[type="text"] {
+    background: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#mainimg {
+    background: url(./img/main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 77vh;
+}
