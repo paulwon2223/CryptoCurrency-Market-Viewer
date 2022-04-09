@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Project</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <div id="topcontainer">
+        <div class="current-time-container">
+            <div id="current-time" class="current-time"></div>
+            <!-- <div id="current-day" class="current-day"></div> -->
+        </div>
+        <div class="input">
+            <input id="inputfield" type="text" placeholder="Search for coin here">
+        </div>
+        <nav class="navbar">
+            <div class="nav-wrapper">
+              <ul id="nav-mobile" class="right hide-on-med-and-down custom">
+                <li><a href="./index.html">Home</a></li>
+                <li><a id="pricepage" href="./pricepage.html">Prices</a></li>
+                <li>
+                    <a class='dropdown-trigger btn blue lighten-5' href='#' data-target='dropdown1'>Contact Us</a>
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <br>
+                            <li><a href="#!">Github</a></li>
+                        </ul>
+                </li>
+        </nav>
+        <div id="searchedCoins">
+            
+        </div>
+    </div>
+    
+    <div class="marketstatus">
+        <p class="market-percent">In the last 24 hours market is<span id="market"></span></p>
+    </div>
+
+<div id="pricescontainer">
+    <div  id="coincont" class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img id="icon" class="card-img-top" src="" alt="Coin image">
+        </div>
+        <div class="card-content">
+          <span id="name" class="card-title activator grey-text text-darken-4">Most Viewed<i class="material-icons right"></i></span>
+        </div>
+        <div class="card-reveal">
+          <span id="name" class="card-title grey-text text-darken-4"><i class="material-icons right">x</i></span>
+          <p class="card-text">Symbol:<span id="symbol">$43,000</span></p>
+          <p class="card-text">Current Price:<span id="price">$43,000</span></p>
+          <p class="card-text">Low 24h:<span id="low">$43,000</span></p>
+          <p class="card-text">High 24h:<span id="high">$43,000</span></p>
+          <p class="card-text">All Time High:<span id="ath">$43,000</span></p>
+          <p class="card-text">Price Change (24h):<span id="pricechange24h">$43,000</span></p>
+          <p class="card-text">Price Change (7d):<span id="pricechange7d">$43,000</span></p>
+          <button id="sell" class="bttns">Sell</button>
+          <button id="buy" class="bttns">Buy</button>
+        </div>
+    </div>
+    <div id="frontcontainer">
+        <canvas id="chart" width="850" height="410"> </canvas>
+    </div>
+</div>
+
+    <div class="cardtitle">
+        <!-- <div class="marketstatus">
+            <p class="market-percent">In the last 24 hours market is<span id="market"></span></p>
+        </div> -->
+        <h1>Most Trending:</h1>
+        <!-- <div class="marketstatus">
+            <p class="market-percent">In the last 24 hours market is<span id="market"></span></p>
+        </div> -->
+    </div>
+    <div id="pricecontainers">
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img id="popularimg1" class="activator" src="./../group-project/img/main2.png">
+            </div>
+            <div class="card-content">
+              <span id="popularname1" class="card-title activator grey-text text-darken-4">Most Trending<i class="material-icons right"></i></span>
+            </div>
+            <div class="card-reveal">
+              <span id="cardname" class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p class="card-text">Market Cap Rank:<span id="rank1"></span></p>
+              <p class="card-text">Price in BTC:<span id="btcprice1"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img id="popularimg2" class="activator" src="./../group-project/img/main2.png">
+            </div>
+            <div class="card-content">
+              <span id="popularname2" class="card-title activator grey-text text-darken-4">Most Viewed<i class="material-icons right"></i></span>
+            </div>
+            <div class="card-reveal">
+              <span id="cardname1" class="card-title grey-text text-darken-4">New Listing<i class="material-icons right">close</i></span>
+              <p class="card-text">Market Cap Rank:<span id="rank2"></span></p>
+              <p class="card-text">Price in BTC:<span id="btcprice2"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img id="popularimg3" class="activator" src="./../group-project/img/main2.png">
+            </div>
+            <div class="card-content">
+              <span id="popularname3" class="card-title activator grey-text text-darken-4">Most Down<i class="material-icons right"></i></span>
+            </div>
+            <div class="card-reveal">
+              <span id="cardname2" class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p class="card-text">Market Cap Rank:<span id="rank3"></span></p>
+              <p class="card-text">Price in BTC:<span id="btcprice3"></span></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img id="popularimg4" class="activator" src="./../group-project/img/main2.png">
+            </div>
+            <div class="card-content">
+              <span id="popularname4"  class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right"></i></span>
+            </div>
+            <div class="card-reveal">
+              <span id="cardname3" class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p class="card-text">Market Cap Rank:<span id="rank4"></span></p>
+              <p class="card-text">Price in BTC:<span id="btcprice4"></span></p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./index1.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

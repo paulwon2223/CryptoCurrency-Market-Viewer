@@ -8,21 +8,20 @@ body {
     padding: 20px 100px;
 }
 
-.container {
-    align-items: center;
-}
-
 #topcontainer {
-    padding-top: 5px;
-}
-
-#topcontainer .current-time-container {
-    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #topcontainer .current-time-container .current-time{
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
+}
+
+
+#topcontainer .nav nav {
+    display: flex;
+    justify-content: space-between;
 }
 
 input[type="text"] {
@@ -32,10 +31,111 @@ input[type="text"] {
     text-align: center;
 }
 
+.navbar {
+    background-color: transparent;
+    color: black;
+    box-shadow: none;
+    width: 350px;
+}
+
+.custom > li > a {
+    color: black;
+}
+
+#imgcont {
+    padding-top: 15px;
+}
+
 #mainimg {
-    background: url(./img/main.png);
+    background: url(./../group-project/img/main.png);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    height: 77vh;
+    height: 80vh;
 }
+
+#coincont {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#pricescontainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+}
+
+
+#icon {
+    height: 150px;
+    width: 150px;
+}
+
+#pricecontainers {
+    display: flex;
+    justify-content:space-around;
+    padding: 10px;
+}
+
+.card {
+    padding: 10px;
+}
+
+.cardtitle h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.marketstatus {
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+.bttns {
+    border: 1px solid black;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.imgcontainer:hover .image {
+    opacity: 0.3;
+}
+  
+.imgcontainer:hover .middle {
+    opacity: 1;
+}
+
+.middletext {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-style: italic;
+}
+
+
+
