@@ -47,7 +47,7 @@ input[type="text"] {
 }
 
 #mainimg {
-    background: url(./../group-project/img/main.png);
+    background: url(./img/main.png);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
